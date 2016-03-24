@@ -35,7 +35,11 @@
   <link href="css/yamm.css" rel="stylesheet">
   <link href="css/template_styles.css" rel="stylesheet" type="text/css">
 <script src="js/aside-menu.js"></script>
- 
+
+
+<link rel="stylesheet" href="css/jquery.mThumbnailScroller.css">
+
+
 </head>
 
 <body class="item">
@@ -394,7 +398,11 @@
        <div class="b-item-main-content__item">
          
           <div class="b-item-main-content__item-img">
+          
+       <div class="b-item-main-content__item-img__inner">
            <a href=""><img class="img-responsive" src="images/rimi/item.png" alt=""></a>
+       </div>
+           
            
            <div class="b-item-main-content__item-img-icons">
             <a class="hit-like-icon" href="#"></a> 
@@ -404,7 +412,74 @@
             <a class="hit-basket-icon" href="#"></a>
           </div>
            </div>
+                        
            
+<div class="col-md-12 col-sm-12 col-xs-12">
+<div class="row">
+           
+ 
+			<div id="content-1" class="content">
+				<ul>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit2.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit4.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit7.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit8.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit1.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit2.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit9.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit10.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit12.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit3.png"></button></li>
+					<li><button class="btn-item-gallery" data-target="#myModal" data-toggle="modal" type=
+          "button"><img class="img-responsive" src="images/rimi/hit6.png"></button></li>
+				
+				</ul>
+			</div> 
+           
+            
+</div>
+</div>      
+            
+            
+
+            
+</div>
+          
+<div aria-labelledby="myModalLabel" class="modal fade" id="myModal" role=
+  "dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" class="close" data-dismiss="modal" type=
+          "button"><span aria-hidden="true">&times;</span></button>
+        </div>
+
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 modal-big-img"><img alt="" src="images/rimi/hit3-big.png">
+            </div>
+        
+          </div>
+
+
+          <div class="modal-footer"></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+              
       
        
        
@@ -636,7 +711,7 @@
        
         </div>
    </div>     
-</div>
+
    
 
 <!-- end main-->
@@ -773,7 +848,41 @@
     </div>
 
 
+<!-- -->
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	
+	<!-- plugin script -->
+	<script src="js/jquery.mThumbnailScroller.js"></script>
+	
+	<script>
+		(function($){
+			$(window).load(function(){
+				
+				$("#content-1").mThumbnailScroller({
+					type:"click-50",
+					theme:"buttons-out"
+				});
+				
+				$("#info a").click(function(e){
+					e.preventDefault();
+					var $this=$(this),
+						el=$this.attr("rel"),
+						to=$this.attr("href").split("#")[1];
+					if(to==="center-white"){
+						to=$("#white").position().left+($("#white").width()/2)-($(el).find(".mTSWrapper").width()/2);
+					}else if(to==="yellow"){
+						to=$("#yellow");
+					}else if(to==="by-100"){
+						to="-=100";
+					}
+					$(el).mThumbnailScroller("scrollTo",to);
+				});
+				
+			});
+		})(jQuery);
+	</script>
 
  
     </body>

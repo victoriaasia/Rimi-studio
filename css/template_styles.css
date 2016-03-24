@@ -10,6 +10,10 @@ body.modal-open,.modal-open .navbar-fixed-top,.modal-open .navbar-fixed-bottom {
   margin-right: 0;
 }
 
+body.modal-open {
+    overflow: visible;
+}
+
 .header {
   border-top: 4px solid #000;
   margin-bottom: -15px;
@@ -31,7 +35,7 @@ p {
 }
 
 .search input {
-  background: url(../images/rimi/search.png) no-repeat;
+  background: url(/images/rimi/search.png) no-repeat;
   background-position: 98%;
   outline: none;
 }
@@ -53,6 +57,7 @@ p {
   width: 100%;
   height: auto;
   position: relative;
+  box-shadow: 0px 0px 1px 0px lightgray;
 }
 
 .sale-content {
@@ -113,7 +118,7 @@ p {
 }
 
 .statistic {
-  padding: 22px 0 0 40px;
+  padding: 23px 0 0 40px;
 }
 
 .basket {
@@ -168,7 +173,7 @@ p {
     width: 17px; 
     height: 18px; 
     border: none; 
-    background: url(../images/rimi/search.png) 50% 50%; 
+    background: url(/images/rimi/search.png) 50% 50%; 
    }*/
 .basket span {
   font-size: 22px;
@@ -183,7 +188,7 @@ p {
 
 .basket p {
   font-size: 14px;
-  margin: 2px 0 0 37px;
+  margin: 2px 0 0 5px;
 }
 
 .carousel-indicators {
@@ -271,7 +276,7 @@ p {
 }
 
 .advantages {
-  background: url(../images/rimi/back-advantages.png) no-repeat;
+  background: url(/images/rimi/back-advantages.png) no-repeat;
   background-position: top;
   height: 350px;
   margin-top: -25px;
@@ -317,8 +322,8 @@ p {
   -khtml-opacity: .5;
   -moz-opacity: .5;
   opacity: .5;
-  height: 170px;
-  top: -76px;
+  height: 178px;
+  top: -80px;
 }
 
 .cover-title {
@@ -334,35 +339,35 @@ p {
 }
 
 .img1 {
-  background-image: url(../images/rimi/1.png);
+  background-image: url(/images/rimi/1.png);
 }
 
 .img2 {
-  background-image: url(../images/rimi/2.png);
+  background-image: url(/images/rimi/2.png);
 }
 
 .img3 {
-  background-image: url(../images/rimi/3.png);
+  background-image: url(/images/rimi/3.png);
 }
 
 .img4 {
-  background-image: url(../images/rimi/4.png);
+  background-image: url(/images/rimi/4.png);
 }
 
 .img5 {
-  background-image: url(../images/rimi/5.png);
+  background-image: url(/images/rimi/5.png);
 }
 
 .img6 {
-  background-image: url(../images/rimi/6.png);
+  background-image: url(/images/rimi/6.png);
 }
 
 .img7 {
-  background-image: url(../images/rimi/7.png);
+  background-image: url(/images/rimi/7.png);
 }
 
 .img8 {
-  background-image: url(../images/rimi/8.png);
+  background-image: url(/images/rimi/8.png);
 }
 
 .offer p {
@@ -419,8 +424,8 @@ p {
 }
 
 .work a img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-height: 188px;
 }
 
 .work .caption span:last-child,.offer-new .caption span:last-child {
@@ -438,10 +443,6 @@ p {
   font-family: 'Roboto';
   font-weight: 300;
   text-align: center;
-}
-
-.hits .hit {
-  height: 270px;
 }
 
 .img-responsive {
@@ -562,7 +563,6 @@ a[href^="mailto:"] {
 
 #footer {
   background-color: #fff;
-  height: 100%;
   border-bottom: 4px solid #000;
 }
 
@@ -623,11 +623,16 @@ a[href^="mailto:"] {
 }
 
 .modal-body img {
-  width: 100%;
+  max-width: 90%;
+  max-height: 300px;
 }
 
 .aside-img,.modal-big-img {
   padding: 10px;
+}
+
+.modal-big-img {
+text-align: center;
 }
 
 .aside-img img {
@@ -666,6 +671,7 @@ a[href^="mailto:"] {
   border-width: 2px;
   border-color: #9d0000;
   margin-top: 15px;
+  width: 190px;
 }
 
 .item-button-add .btn-add:hover {
@@ -702,7 +708,6 @@ a[href^="mailto:"] {
 .modal-footer .item-button-add {
   font-family: 'Roboto';
   text-align: right;
-  padding-top: 15px;
 }
 
 .modal-footer .item-button-add .item-price {
@@ -732,18 +737,19 @@ a[href^="mailto:"] {
 }
 
 .hits .hit {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-left: 12px;
+  height: 290px;
 }
 
 .hit-img1 {
-  background: url(../images/rimi/hit1.png) no-repeat;
+  background: url(/images/rimi/hit1.png) no-repeat;
   height: 186px;
   position: relative;
 }
 
 .hit-img2 {
-  background: url(../images/rimi/hit2.png) no-repeat;
+  background: url(/images/rimi/hit2.png) no-repeat;
   height: 186px;
   position: relative;
 }
@@ -753,14 +759,14 @@ a[href^="mailto:"] {
   background-color: #fff;
   opacity: .5;
   width: 42px;
-  height: 173px;
-  top: 0;
-  left: 216px;
+  height: 184px;
+  top: 0px;
+  left: 215px;
   display: none;
 }
 
 .img-icons a {
-  margin: 21px 12px;
+  margin: 21px 14px;
 }
 
 .img-icons:hover {
@@ -783,7 +789,7 @@ display:table-cell;
 vertical-align:bottom;
 }*/
 .hit-like-icon {
-  background: url(../images/rimi/sprite.png) 0 -42px no-repeat;
+  background: url(/images/rimi/sprite.png) 0 -42px no-repeat;
   display: block;
   width: 17px;
   height: 17px;
@@ -794,7 +800,7 @@ vertical-align:bottom;
 }
 
 .hit-eye-icon {
-  background: url(../images/rimi/sprite.png) 0 -21px no-repeat;
+  background: url(/images/rimi/sprite.png) 0 -21px no-repeat;
   display: block;
   width: 17px;
   height: 17px;
@@ -805,7 +811,7 @@ vertical-align:bottom;
 }
 
 .hit-stat-icon {
-  background: url(../images/rimi/sprite.png) 0 -65px no-repeat;
+  background: url(/images/rimi/sprite.png) 0 -65px no-repeat;
   display: block;
   width: 17px;
   height: 17px;
@@ -816,7 +822,7 @@ vertical-align:bottom;
 }
 
 .hit-basket-icon {
-  background: url(../images/rimi/sprite.png) 0 0 no-repeat;
+  background: url(/images/rimi/sprite.png) 0 0 no-repeat;
   display: block;
   width: 17px;
   height: 17px;
@@ -922,7 +928,7 @@ vertical-align:bottom;
   padding-left: 0;
 }
 
-.column ul li a.sale {
+.column ul li a.highlight {
   color: #9d0000;
 }
 
@@ -977,7 +983,7 @@ vertical-align:bottom;
 
 .breadcrumb>li+li:before {
   content: "";
-  background: url(../images/rimi/arrow-right.png) no-repeat;
+  background: url(/images/rimi/arrow-right.png) no-repeat;
   background-size: 6px;
   position: relative;
   top: 5px;
@@ -1139,10 +1145,10 @@ vertical-align:bottom;
   position: absolute;
   background-color: #fff;
   opacity: .5;
-  width: 38px;
-  height: 171px;
-  top: 0;
-  left: 232px;
+   width: 39px;
+    height: 180px;
+    top: -1px;
+    left: 232px;
   display: none;
 }
 
@@ -1162,7 +1168,7 @@ vertical-align:bottom;
 }
 
 .catalog-img-icons a {
-  margin: 21px 11px;
+  margin: 23px 11px;
 }
 
 .catalog-item-img:hover .catalog-img-icons {
@@ -1273,7 +1279,7 @@ vertical-align:bottom;
 }
 
 .catalog-bottom-nav .pagination {
-  margin: 90px 0 0;
+  margin: 80px 0 0;
 }
 
 .catalog-pages-filter .pagination li a,.catalog-navigation .pagination li a {
@@ -1353,7 +1359,7 @@ input.priceSliderValue {
 
 .aside-params .ui-state-default,.aside-params .ui-widget-content .ui-state-default {
   border: 0;
-  background: url(../images/rimi/price-slider-circle.png) no-repeat;
+  background: url(/images/rimi/price-slider-circle.png) no-repeat;
   margin-top: -2px;
 }
 
@@ -1433,8 +1439,52 @@ input.priceSliderValue {
   padding: 0;
 }
 
+.b-item-main-content__item-desc-detail #two {
+    text-align: center;
+}
+
+.b-item-main-content__item-desc-detail #two img,
+
+.b-item-main-content__item-desc-detail #one img
+{
+    max-width: 100%;
+}
+
+.b-item-main-content__item-desc-detail #one tbody tr td:first-child {
+    width:40%;
+    padding-right:10px;
+}
+
+.bx-filter-parameters-box {
+    overflow: hidden;
+}
+
 /* catalog style end */
 /* item style starts */
+
+		.item-gallery-content{
+			overflow: auto;
+			position: relative;
+			padding: 10px;
+			background: #333;
+			margin: 10px auto;
+			width: 85%;
+			height: auto;
+		}
+		.item-gallery-content li{ margin: 0 4px; }
+		
+		#content-1{
+			padding: 10px 40px;
+			background-color: transparent;
+			width: 100%;
+		}
+		#content-1 .mTSButtonIcon{ fill: #aaa; }
+		#content-1 .mTSButton .mTSButtonIcon{ opacity: .5; }
+		#content-1 .mTSButton:hover .mTSButtonIcon{ opacity: 1; }
+		
+
+
+
 .b-aside-item-sale {
   margin-top: 80px;
 }
@@ -1477,17 +1527,34 @@ input.priceSliderValue {
 }
 
 .b-aside-item-sale__icons {
-  position: absolute;
+  position: relative;
   background-color: #fff;
   opacity: .5;
   width: 41px;
-  height: 167px;
-  top: 830px;
-  left: 226px;
+    height: 180px;
+    top: -179px;
+    left: 214px;
 }
 
 .b-aside-item-sale__icons a {
-  margin: 21px 14px;
+  position:absolute;
+}
+
+.b-aside-item-sale__icons .hit-like-icon {
+    margin: 21px 12px;
+}
+
+
+.b-aside-item-sale__icons .hit-eye-icon {
+     margin: 62px 12px;
+}
+
+.b-aside-item-sale__icons .hit-stat-icon {
+     margin: 102px 12px;
+}
+
+.b-aside-item-sale__icons .hit-basket-icon {
+     margin: 142px 12px;
 }
 
 .b-aside-item-last {
@@ -1496,6 +1563,7 @@ input.priceSliderValue {
 
 .b-aside-item-last__img {
   margin: 10px 0;
+  max-height:180px;
 }
 
 .b-aside-item-last__img:hover .b-aside-item-sale__icons {
@@ -1513,6 +1581,30 @@ input.priceSliderValue {
   font-family: "Roboto";
   font-weight: 500;
   margin-top: 10px;
+}
+
+/* .b-item-main-content__item-img__inner img {
+    height: auto;
+    width: 825px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px 0 lightgray;
+    padding: 3px;
+} */
+
+.b-item-main-content__item-img__inner a {
+    margin-top:0 !important;
+}
+
+.b-item-main-content__item-img__inner {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 0 lightgray;
+    padding: 2px;
 }
 
 .b-item-main-content__item-img-icons {
@@ -1539,7 +1631,7 @@ input.priceSliderValue {
 
 .b-item-main-content__item-add {
   text-align: center;
-  background: url(../images/rimi/item-line.png) no-repeat;
+  background: url(/images/rimi/item-line.png) no-repeat;
   background-position: center;
   margin-top: 7px;
 }
@@ -1625,7 +1717,7 @@ input.priceSliderValue {
   color: #000;
   font-style: italic;
   text-align: center;
-  background: url(../images/rimi/item-line.png) no-repeat;
+  background: url(/images/rimi/item-line.png) no-repeat;
   background-position: center;
   margin-bottom: 25px;
 }
@@ -1639,7 +1731,7 @@ input.priceSliderValue {
   background-color: #fff;
   opacity: .5;
   width: 42px;
-  height: 172px;
+  height: 181px;
   top: 0;
   left: 228px;
 }
@@ -1677,8 +1769,26 @@ input.priceSliderValue {
   margin: 10px 0 15px 5px;
 }
 
+.btn-item-gallery {
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+}
+
+.mTSThumbContainer button {
+    box-shadow: 0px 0px 4px 0 lightgray;
+    padding:1px;
+}
+
+/* #my-thumbs-list{
+  overflow: auto;
+  width: 800px;
+  height: auto; */
+}
+
 /* item style end */
 /*basket styles starts*/
+
 .b-basket-row__mount #spinner {
   width: 40px;
   border: 1px solid lightgray;
@@ -1812,7 +1922,7 @@ input.priceSliderValue {
 
 .b-basket-button-continue,.b-basket-button-order {
   text-align: center;
-  background: url(../images/rimi/button-line-big.png) no-repeat;
+  background: url(/images/rimi/button-line-big.png) no-repeat;
   background-position: center;
   margin-top: 7px;
 }
@@ -1964,10 +2074,6 @@ input.priceSliderValue {
     margin: 0 -15px;
   }
 
-  #line:nth-child(2) {
-    display: none;
-  }
-
   .navbar-default .navbar-collapse,.navbar-default .navbar-form {
     border: none;
   }
@@ -1979,7 +2085,7 @@ input.priceSliderValue {
     width: 100%;
   }
 
-  li.yamm-fw {
+  .header-menu .yamm ul.nav li:last-child {
     border-bottom: 1px solid lightgray;
   }
 
@@ -2000,13 +2106,13 @@ input.priceSliderValue {
     margin-top: 18px;
     padding-left: 10px;
   }
+    
+    .search {
+        margin-top:5px;
+    }
 
   .search input {
     background-position: 98%;
-  }
-
-  .search {
-    margin-top: 80px;
   }
 
   .contacts p a {
@@ -2022,7 +2128,7 @@ input.priceSliderValue {
   }
 
   .basket {
-    padding: 15px 17px 0 18px;
+    padding: 15px 17px 0 10px;
     float: right;
   }
 
@@ -2161,6 +2267,10 @@ input.priceSliderValue {
   .hits .caption {
     padding: 0 0 0 5px;
   }
+    
+  .hits .hit {
+    height:auto;
+    }
 
   .statistic div:first-child {
     width: 70px;
@@ -2168,7 +2278,7 @@ input.priceSliderValue {
   }
 
   .stat {
-    margin-top: 0;
+    margin: 0;
   }
 
   .statistic .stat img {
@@ -2438,10 +2548,23 @@ input.priceSliderValue {
   .catalog-bottom-nav .catalog-navigation .pagination {
     margin-bottom: 40px;
   }
-
-  .catalog-main-content .item {
-    height: 200px;
-  }
+    
+    .b-catalog-row__text {
+    width: 50%;
+    float: right;
+    }
+    
+    .b-catalog-row__img {
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+    }
+    
+    .b-catalog-row {
+        position:relative;
+    }
+    
+    
 
   /*catalog style media -480 end */
   /* item media -480 start*/
@@ -2465,9 +2588,13 @@ input.priceSliderValue {
     margin-top: 30px;
   }
 
-  .b-item-main-content__item-desc-detail table tr td:last-child {
+    .b-item-main-content__item-desc-detail table tr td {
+        font-size:11px;
+    }
+    
+  /* .b-item-main-content__item-desc-detail table tr td:last-child {
     text-align: center;
-  }
+  } */
 
   /* item media -480 end*/
   /*basket media -480 starts*/
@@ -2477,7 +2604,10 @@ input.priceSliderValue {
 
   .b-basket-row__text {
     margin: 20px 0;
-  }/*basket media -480 end*/
+  }
+    
+    
+    /*basket media -480 end*/
   
 }
 
@@ -2512,6 +2642,16 @@ input.priceSliderValue {
   .b-basket-row__mount,.b-basket-row__price {
     text-align: center;
   }
+
+  .b-basket-row__text {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width: 767px) {
+#line:first-child {
+    display: none;
+  }
 }
 
 @media screen and (min-width:647px) and (max-width: 767px) {
@@ -2528,7 +2668,7 @@ input.priceSliderValue {
     width: 100%;
   }
 
-  li.yamm-fw {
+.header-menu .yamm ul.nav li:last-child {
     border-bottom: 1px solid lightgray;
   }
 
@@ -2548,6 +2688,10 @@ input.priceSliderValue {
   .header .container {
     margin-top: 36px;
   }
+    
+  .search {
+        margin-top:5px;
+    }
 
   .navbar-header .menu-title {
     display: block;
@@ -2560,10 +2704,6 @@ input.priceSliderValue {
 
   .navbar-header {
     border-bottom: solid 1px lightgray;
-  }
-
-  #line:nth-child(2) {
-    display: none;
   }
 
   .carousel-inner {
@@ -2695,7 +2835,7 @@ input.priceSliderValue {
   }
 
   .stat {
-    margin-top: 0;
+    margin: 0;
   }
 
   .statistic .stat img {
@@ -2749,10 +2889,6 @@ input.priceSliderValue {
     background-position: 98%;
   }
 
-  .search {
-    margin-top: 100px;
-  }
-
   .sale-content .content {
     margin: 14% 0 0 25px;
   }
@@ -2803,6 +2939,7 @@ input.priceSliderValue {
 
   .hits .hit {
     margin-bottom: 20px;
+    height: auto;
   }
 
   .mini-text h1 {
@@ -2963,10 +3100,10 @@ input.priceSliderValue {
   .catalog-bottom-nav .catalog-navigation .pagination {
     margin-bottom: 40px;
   }
-
-  .catalog-main-content .item {
-    height: 280px;
-  }
+    
+  .b-catalog-row__price {
+        margin-top:0;
+    }
 
   /* media to 767 - catalog styles end*/
   /*item media -767 start*/
@@ -2974,7 +3111,7 @@ input.priceSliderValue {
     display: none;
   }
 
-  /*item media -676 end*/
+  /*item media -767 end*/
   /*basket media -767 start*/
   .b-basket-row__text {
     margin: 20px 0;
@@ -3100,10 +3237,10 @@ input.priceSliderValue {
     text-align: left;
     margin: 15px 1px;
   }
-
-  .catalog-navigation {
-    text-align: left;
-  }
+    
+    .catalog-navigation {
+        text-align: left;
+    }
 
   /* media to 991 - catalog styles end*/
   .carousel-inner {
@@ -3139,11 +3276,8 @@ input.priceSliderValue {
   }
 
   .basket {
-    padding: 26px 0 0 12px;
-  }
-
-  .basket>span img {
-    margin-left: 30%;
+    padding: 30px 0 0 12px;
+    text-align: center;
   }
 
   .basket p {
@@ -3285,6 +3419,10 @@ input.priceSliderValue {
   .dropdown-menu .column ul li:first-child {
     padding: 10px 0;
   }
+    
+    .hits .hit {
+        height: 240px; 
+    }
 }
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
@@ -3316,7 +3454,7 @@ input.priceSliderValue {
   }
 
   .contacts span a {
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .contacts p a {
@@ -3325,11 +3463,11 @@ input.priceSliderValue {
 
   .basket {
     padding: 28px 0 0 10px;
+    text-align: center;
   }
 
   .basket p {
-    font-size: 11px;
-    margin: 8px 0 0 37px;
+    display: none;
   }
 
   .navbar-default .navbar-nav>li>a {
@@ -3352,6 +3490,11 @@ input.priceSliderValue {
   .hit-img:hover .img-icons {
     display: none;
   }
+    
+     .catalog-item-img:hover .catalog-img-icons {
+    display: none;
+  }
+
 
   .footer-tel {
     font-size: 22px;
@@ -3415,6 +3558,10 @@ input.priceSliderValue {
   .b-catalog-row__text-desc {
     font-size: 13px;
   }/*catalog to -1199 end*/
+    
+  .hits .hit {
+     height: 260px;
+    }
   
 }
 
